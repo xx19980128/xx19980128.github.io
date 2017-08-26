@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css " >
+        p{margin:20px;}
+        *{margin:0;} /* 浏览器网页无空隙置顶*/
+        div{
+            border: 1px solid red;
+        }
+        #header {
+            width: 1900px;
+            height: 55px;
+            background-color:white;
+            position:fixed; /*固定定位*/
+            opacity: 0.8;  /*透明度*/
+            z-index: 1;
+        }
+        #banner {
+            position:relative;
+            width: 1900px;
+            height: 925px;
+        }
+        .h4{
+            margin-bottom:465px;
+            text-transform: uppercase;
+        }
+        .h5{
+            margin-bottom: 200px;
+            font-size: 100px;
+            line-height: 40%;
+        }
+        #top_txt{
+            width: 1900px;
+            height: 380px;
+        }
+        .h1 {text-align:center;
+              font-size:40px}
+        .p1 {font-size:25px;
+              text-align:center;}
+        #gridwrap{
+            position:  relative;
+            width: 1900px;
+            height: 1620px;
+        }
+        .p2 {
+            font-size:20px;
+        }
+        .p3{
+            font-size:40px;
+            line-height:90%;
+        }
+        .p4{
+            font-size:30px;
+            line-height:90%;
+        }
+        #buttom_txt{
+            width: 1900px;
+            height: 500px;
+            position:relative;
+        }
+        .h2
+        {
+            text-align: center;
+            font-size:40px;
+            text-transform: uppercase;
+        }
+        .h3{
+            text-align: center;
+            font-size:20px;
+            text-transform: uppercase;
+            margin-top: 25px;
+        }
+        .p5{
+            text-align: center;
+            margin-top: 45px;
+        }
+
+
+
+        #footer{
+            width: 1900px;
+            height: 310px;
+            position:relative;
+
+        }
+        #main{
+            width: 1900px;
+            margin: 0 auto;
+        }
+        #top_txt {
+            position: relative;
+        }
+        #inner0 {
+           position: absolute;
+           top:100px ;
+           left:880px;;
+       }
+
+        #gridwrap div {
+            position: absolute;
+        }
+        #inner1 {
+            top: 0px;
+            left: 0px;
+            width: 950px;
+            height: 570px;
+            background-image: url("images/grid01.jpg");
+            background-size: 100% 100%;
+            }
+        #inner2 {
+            top: 0px;
+            left: 950px;
+            width: 475px;
+            height:475px;
+        }
+        #inner3 {
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 475px;
+            height: 570px;
+            background-color:#9370db;
+        }
+        #inner4 {
+            position:relative;
+            top: 570px;
+            left: 0px;
+            width: 475px;
+            height:1052px;
+
+        }
+        #inner5 {
+            top: 570px;
+            left: 475px;
+            width: 475px;
+            height:570px;
+        }
+        #inner6 {
+            top: 475px;
+            left:950px;
+            width: 475px;
+            height:570px;
+        }
+        #inner7 {
+            top: 570px;
+            right: 0px;
+            width: 475px;
+            height:574px;
+        }
+        #inner8 {
+            top: 1140px;
+            left: 475px;
+            width: 475px;
+            height:482px;
+        }
+        #inner9 {
+            top:1045px;
+            left: 950px;
+            width: 475px;
+            height:575px;
+            background-color:#9370db;
+        }
+        #inner10 {
+            top: 1144px;
+            right: 00px;
+            width: 475px;
+            height:475px;
+        }
+        #inner11 {
+            top: 46px;
+            left: 41px;
+            width: 385px;
+            height:690px;
+            background-color:white;
+            box-shadow:30px 2px 30px #909090;
+        }
+        #inner12 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 1425px;
+            height:310px;
+            background-color:black;
+
+        }
+        #inner13{
+            position: absolute;
+            left: 7.5%;
+            width:650;
+            bottom: 0;
+        }
+        #inner14{
+            position:absolute;
+            left: 7.5%;
+            bottom: 0;
+
+        }
+        #inner15{
+            position: absolute;
+            left: 7.5%;
+            width:650;
+            bottom: 0;
+        }
+        #font1 {
+            position: absolute;
+            top:165px ;
+            width: 1900px;
+            margin: 0 auto;
+
+        }
+        #font2 {
+            position: absolute;
+            top:250px ;
+            left:490px ;
+            width: 920px;
+        }
+        #font3 {
+            position:absolute;
+            width:1900px;
+            top:120px;
+        }
+        #font4{
+
+           float: left;
+           margin-left: 227px;
+           margin-top: 200px;
+
+        }
+        #font5 {
+
+          float: left;
+          margin-left: 65px;
+          margin-top: 90px;
+       }
+        #font6 {
+
+              float: left;
+              margin-left: 65px;
+              margin-top: 90px;
+          }
+        img {
+            transition:all 0.5s;
+        }
+
+        .bar:hover img{
+            transform:scale(1.05, 1.05);
+        }
+        .bg1 {
+            top: 0px;
+            left: 0px;
+            width: 950px;
+            height:570px;
+
+        }
+        .bg2 {
+            top: 0px;
+            left: 0px;
+            width: 475px;
+            height:475px;
+            overflow:hidden;
+            position: absolute;
+        }
+
+        .bg2:hover img{
+            transform:scale(1.05, 1.05);
+        }
+        .bg3 {
+            top: 0px;
+            left: 0px;
+            width: 475px;
+            height:570px;
+            overflow:hidden;
+        }
+        .bg3:hover img{
+            transform:scale(1.05, 1.05);
+        }
+        .bg4 {
+            top: 0px;
+            left: 0px;
+            width: 475px;
+            height:570px;
+            overflow:hidden;
+        }
+        .bg4:hover img{
+            transform:scale(1.05, 1.05);
+        }
+        .bg5 {
+            top: 0px;
+            left: 0px;
+            width: 475px;
+            height:574px;
+            overflow:hidden;
+        }
+        .bg5:hover img{
+            transform:scale(1.05, 1.05);
+        }
+        .bg6 {
+            top: 0px;
+            left: 0px;
+            width: 475px;
+            height:482px;
+            overflow:hidden;
+        }
+        .bg6:hover img{
+            transform:scale(1.05, 1.05);
+        }
+        .bg7 {
+            top: 0px;
+            left: 0px;
+            width: 475px;
+            height:475px;
+            overflow:hidden;
+        }
+        .bg7:hover img{
+            transform:scale(1.05, 1.05);
+        }
+        .bar {
+            background-color: black;
+            left: 0;
+            bottom: 0;
+            height: 91px;
+            width: 950px;
+            position: absolute;
+            overflow:hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+     <div id="header"></div>
+     <div id="banner"style="color: white"  ><img src="images/banner01.jpg " width="1900px"height="925px"/>
+         <div id="inner13"><h3 class="h4">New England Aquarium</h3></div>
+         <div id="inner15"><h1 class="h5">STEPHEN<br> <br>KING<br><br> SHINES ON.</h1></div>
+         <div id="inner14">11</div>
+
+     </div>
+     <div id="top_txt" >
+        <div id="font1"> <h2 class="h1" >IMAGINATION TO APPLICATION</h2></div>
+         <div id="font2"><center><p class="p1" >From empowering challenger brands to think big to helping global brands feel closer to home,
+             we leverage technology to bring people closer to the products,
+             content, and experiences they love.</p></center></div>
+         <div id="inner0"><img src="images/squiggle.gif"width="140px"height="18px"/></div>
+     </div>
+     <div id="gridwrap" >
+         <div id="inner1" >
+             <div class="bg1">
+               <div class="bar"></div>
+             </div>
+         </div>
+        <div id="inner2" ><div class="bg2"> <img src="images/grid02.jpg "width="475px"height="475px"/></div></div>
+         <div id="inner3" style="color: white" >
+             <br><br><p class="p2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRENDS</p>
+             <p class="p3"><b>&nbsp;&nbsp;&nbsp;&nbsp;From<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;Canvas to<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;Screen<br></b></p>
+             <p class="p4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digital Art Goes<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mainstream.</p>
+         </div>
+
+         <div id="inner4" >
+             <div id="inner11" > <br><br><p class="p2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRENDS</p>
+                 <p class="p3"><b>&nbsp;&nbsp;&nbsp;&nbsp;From<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;Canvas to<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;Screen<br></b></p>
+                 <p class="p4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digital Art Goes<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mainstream.</p> </div><img src="images/bg-pattern.gif  "width="475px"height="1052px"/></div>
+         <div id="inner5" ><div class="bg3"><img src="images/grid03.jpg "width="475px"height="570px"/></div></div>
+         <div id="inner6" ><div class="bg4"><img src="images/grid04.jpg "width="475px"height="570px"/></div></div>
+         <div id="inner7" ><div class="bg5"><img src="images/grid05.jpg "width="475px"height="574px"/></div></div>
+         <div id="inner8" ><div class="bg6"><img src="images/grid06.jpg "width="475px"height="482px"/></div></div>
+         <div id="inner9" style="color: white"  > <br><br><p class="p2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRENDS</p>
+             <p class="p3"><b>&nbsp;&nbsp;&nbsp;&nbsp;From<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;Canvas to<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;Screen<br></b></p>
+             <p class="p4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digital Art Goes<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mainstream.</p></div>
+         <div id="inner10" ><div class="bg7"><img src="images/grid07.jpg "width="475px"height="475px"/></div></div>
+     </div>
+     <div id="buttom_txt" style="color: white" >
+          <div id="font3"><h1 class="h2">Make. Work. Play.</h1><h4 class="h3" >Since 2001</h4>
+          <p class="p5" >"With an award winning 15 year track record,
+              DOMANI has been recognized as one of the top digital agencies in business tody.
+              <br>
+              "We help brands around the world express themselves and collaboratively connect with their audiences."
+          </p></div>
+          <img src="images/bridge.jpg  "width="1900px"height="500px"/></div>
+     <div id="footer" style="color: white" >
+
+         <div id="inner12"><div id="font4">
+             © 2015 Domani Studios LLC.
+
+         </div>
+
+             <div id="font5" ><b>WALK</b><br><br>
+                 <a href="" style="color: white;text-decoration: none">32 Avenue of the Americas<br>
+                     19th Floor<br>
+                     New York, NY 10013<br></a>
+                 <a href="" style="color: white">View on Map</a>
+         </div>
+
+         <div id="font6" ><b>TALK</b><br><br>
+                New Biz:<a href="#" style="color: white"  >hello@domanistudios.com</a><br>
+                General:<a href="" style="color: white" >hello@domanistudios.com</a><br>
+                Careers:<a href="" style="color: white"> workwithus@domanistudios.com</a><br>
+                Phone:<a href="" style="color: white;text-decoration: none">646-744-3501</a> / 
+             Fax: <a href="" style="color: white;text-decoration: none">212-242-4112</a>
+         </div>                                       <!--去下划线-->
+         </div>
+     </div>
+     </div>
+
+</body>
+</html>
